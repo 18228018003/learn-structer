@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e459b297-a451-4c29-96f1-0714f19e6938" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/zdy/learn/sort/InsertSort.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\develop\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadAnnotationsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="jdkForImporter" value="1.8" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1zwVTcGu2tJ00rOPHGUXM3T9nX2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/mengtu/structer/tree" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.43563217" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="cn.cast.jvm.thread" />
+      <recent name="cn.cast.graph" />
+      <recent name="com.zdy.learn.tree" />
+      <recent name="com.learn" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\develop\learn-structer\src\main\java\com\mengtu\structer\tree" />
+      <recent name="D:\develop\learn-structer\src\main\java\cn\cast\graph" />
+      <recent name="D:\develop\learn-structer\src\main\java\cn\cast\list\map\map" />
+      <recent name="D:\develop\learn-structer\src\main\java\cn\cast\list\map" />
+      <recent name="D:\develop\learn-structer\src\main\java\cn\cast\list\set" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mengtu.structer.map" />
+      <recent name="com.mengtu.structer.tree" />
+      <recent name="cn.cast.graph" />
+      <recent name="cn.cast.recur" />
+      <recent name="cn.cast.unifind" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MainTest (1)">
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mengtu.structer.completablefuture.Demo" />
+      <module name="learn-structer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mengtu.structer.completablefuture.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.cast.map.MainT" />
+      <module name="learn-structer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.cast.map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mengtu.structer.heap.MainTest" />
+      <module name="learn-structer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mengtu.structer.heap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mengtu.structer.tree.MainTest" />
+      <module name="learn-structer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mengtu.structer.tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mengtu.structer.linear.MyArray" />
+      <module name="learn-structer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mengtu.structer.linear.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MyArray" />
+      <item itemvalue="Application.MainTest" />
+      <item itemvalue="Application.Demo" />
+      <item itemvalue="Application.MainT" />
+      <item itemvalue="Application.MainTest (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainTest (1)" />
+        <item itemvalue="Application.MainT" />
+        <item itemvalue="Application.Demo" />
+        <item itemvalue="Application.MainTest" />
+        <item itemvalue="Application.MyArray" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e459b297-a451-4c29-96f1-0714f19e6938" name="Default Changelist" comment="" />
+      <created>1635059145149</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635059145149</updated>
+      <workItem from="1635059146343" duration="15541000" />
+      <workItem from="1635177834763" duration="122803000" />
+      <workItem from="1636379259260" duration="7807000" />
+      <workItem from="1636466344341" duration="9057000" />
+      <workItem from="1636641757929" duration="8711000" />
+      <workItem from="1637246686839" duration="10378000" />
+      <workItem from="1637391380900" duration="53133000" />
+      <workItem from="1637762659236" duration="12497000" />
+      <workItem from="1637937120612" duration="53079000" />
+      <workItem from="1638364849861" duration="7501000" />
+      <workItem from="1638633036568" duration="16112000" />
+      <workItem from="1638888404176" duration="65154000" />
+      <workItem from="1639748892214" duration="5585000" />
+      <workItem from="1639898841427" duration="14894000" />
+      <workItem from="1640088642361" duration="12064000" />
+      <workItem from="1640705404389" duration="2715000" />
+      <workItem from="1643098741117" duration="3284000" />
+      <workItem from="1644385741781" duration="630000" />
+      <workItem from="1645024907245" duration="4000" />
+      <workItem from="1645344413299" duration="26237000" />
+      <workItem from="1645618169500" duration="5057000" />
+      <workItem from="1645787707130" duration="7181000" />
+      <workItem from="1646564063520" duration="3129000" />
+      <workItem from="1646744760033" duration="20030000" />
+      <workItem from="1647266940025" duration="8064000" />
+      <workItem from="1647434250061" duration="645000" />
+      <workItem from="1647443767101" duration="138285000" />
+      <workItem from="1649136806260" duration="22835000" />
+      <workItem from="1649494630797" duration="20000000" />
+      <workItem from="1649942038984" duration="18865000" />
+      <workItem from="1650169086500" duration="8788000" />
+      <workItem from="1650188539316" duration="100269000" />
+      <workItem from="1651838784114" duration="3694000" />
+      <workItem from="1652364914063" duration="7722000" />
+      <workItem from="1653197425871" duration="1592000" />
+      <workItem from="1660449030139" duration="55557000" />
+      <workItem from="1660659782985" duration="7065000" />
+      <workItem from="1660830319991" duration="27174000" />
+      <workItem from="1660979884956" duration="32201000" />
+      <workItem from="1661067914042" duration="42000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="19" />
+        </breakpoint>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.InterruptedException" package="java.lang" />
+          <option name="timeStamp" value="21" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalAccessException" package="java.lang" />
+          <option name="timeStamp" value="35" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.SecurityException" package="java.lang" />
+          <option name="timeStamp" value="37" />
+        </breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/learn/Stu.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/cn/cast/jvm/thread/AtomicFieldDemo.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/learn_structer$ABADemo.ic" NAME="ABADemo Coverage Results" MODIFIED="1650123701871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>cn.cast.jvm.cas.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/learn_structer$ShareDemo.ic" NAME="ShareDemo Coverage Results" MODIFIED="1650202754425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>cn.cast.jvm.thread.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/learn_structer$Main_test1.ic" NAME="Main.test1 Coverage Results" MODIFIED="1637415699881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>cn.cast.list.tree.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/learn_structer$NQueue.ic" NAME="NQueue Coverage Results" MODIFIED="1639150097753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>cn.cast.recur.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/learn_structer$LCS.ic" NAME="LCS Coverage Results" MODIFIED="1639306076182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>cn.cast.dp.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/learn_structer$Test.ic" NAME="Test Coverage Results" MODIFIED="1637761515148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/learn_structer$MyTest_getMax.ic" NAME="MyTest.getMax Coverage Results" MODIFIED="1650029914357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.learn.*</FILTER>
+    </SUITE>
+  </component>
+</project>

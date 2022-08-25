@@ -5,13 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e459b297-a451-4c29-96f1-0714f19e6938" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/structer/graph/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/structer/graph/ListGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/structer/graph/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/structer/graph/MatrixGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/structer/graph/MinHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/structer/graph/UnionFind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/recur/ClimbStairs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/recur/Fib.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/recur/Hanoi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/recur/NQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/sort/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/sort/HeapSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/sort/InsertionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/sort/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/sort/MergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/sort/SelectionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/sort/Sort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cast/pattern/offon/AbstractSkin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cast/pattern/offon/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cast/pattern/offon/DefaultSkin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cast/pattern/offon/HeiMaSkin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cast/pattern/offon/SougouInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mengtu/structer/graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/structer/graph/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mengtu/structer/graph/ListGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/structer/graph/ListGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mengtu/structer/graph/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/structer/graph/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mengtu/structer/heap/BinaryHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/structer/heap/BinaryHeap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +88,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/mengtu/structer/tree" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/sort" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -95,11 +109,14 @@
       <recent name="com.learn" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\develop\learn-structer\src\main\java\com\mengtu\alogrithm\sort" />
       <recent name="D:\develop\learn-structer\src\main\java\com\mengtu\structer\tree" />
       <recent name="D:\develop\learn-structer\src\main\java\cn\cast\graph" />
       <recent name="D:\develop\learn-structer\src\main\java\cn\cast\list\map\map" />
       <recent name="D:\develop\learn-structer\src\main\java\cn\cast\list\map" />
-      <recent name="D:\develop\learn-structer\src\main\java\cn\cast\list\set" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\develop\learn-structer\src\main\lib" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.mengtu.structer.graph" />
@@ -109,13 +126,13 @@
       <recent name="cn.cast.recur" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mengtu.structer.completablefuture.Demo" />
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.cast.sort.Main" />
       <module name="learn-structer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mengtu.structer.completablefuture.*" />
+          <option name="PATTERN" value="cn.cast.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,11 +141,11 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mengtu.structer.graph.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.mengtu.alogrithm.sort.Main" />
       <module name="learn-structer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mengtu.structer.graph.*" />
+          <option name="PATTERN" value="com.mengtu.alogrithm.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,12 +153,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.cast.map.MainT" />
+    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mengtu.alogrithm.sort.MergeSort" />
       <module name="learn-structer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.cast.map.*" />
+          <option name="PATTERN" value="com.mengtu.alogrithm.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,12 +166,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mengtu.structer.heap.MainTest" />
+    <configuration name="NQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mengtu.alogrithm.recur.NQueue" />
       <module name="learn-structer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mengtu.structer.heap.*" />
+          <option name="PATTERN" value="com.mengtu.alogrithm.recur.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -162,12 +179,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mengtu.structer.tree.MainTest" />
+    <configuration name="Nq" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mengtu.alogrithm.recur.Nq" />
       <module name="learn-structer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mengtu.structer.tree.*" />
+          <option name="PATTERN" value="com.mengtu.alogrithm.recur.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -176,19 +193,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MainTest" />
-      <item itemvalue="Application.Demo" />
-      <item itemvalue="Application.MainT" />
-      <item itemvalue="Application.MainTest (1)" />
+      <item itemvalue="Application.NQueue" />
+      <item itemvalue="Application.Nq" />
+      <item itemvalue="Application.MergeSort" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.MainTest (1)" />
-        <item itemvalue="Application.MainT" />
-        <item itemvalue="Application.Demo" />
-        <item itemvalue="Application.MainTest" />
+        <item itemvalue="Application.MergeSort" />
+        <item itemvalue="Application.Nq" />
+        <item itemvalue="Application.NQueue" />
       </list>
     </recent_temporary>
   </component>
@@ -242,7 +259,12 @@
       <workItem from="1660659782985" duration="7065000" />
       <workItem from="1660830319991" duration="27174000" />
       <workItem from="1660979884956" duration="32201000" />
-      <workItem from="1661067914042" duration="21248000" />
+      <workItem from="1661067914042" duration="25259000" />
+      <workItem from="1661169456878" duration="1956000" />
+      <workItem from="1661172156743" duration="8549000" />
+      <workItem from="1661222819445" duration="13620000" />
+      <workItem from="1661326980204" duration="595000" />
+      <workItem from="1661424760804" duration="9077000" />
     </task>
     <task id="LOCAL-00001" summary="测试 计算单词数量">
       <created>1661068219721</created>
@@ -258,7 +280,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661068274392</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="图相关数据结构 提交">
+      <created>1661099821618</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661099821618</updated>
+    </task>
+    <task id="LOCAL-00004" summary="删除无关东西">
+      <created>1661099922877</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661099922877</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +303,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="测试 计算单词数量" />
     <MESSAGE value="提交 .idea文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交 .idea文件" />
+    <MESSAGE value="图相关数据结构 提交" />
+    <MESSAGE value="删除无关东西" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除无关东西" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -284,20 +322,24 @@
           <properties class="java.lang.InterruptedException" package="java.lang" />
           <option name="timeStamp" value="21" />
         </breakpoint>
-        <breakpoint enabled="true" type="java-exception">
+        <breakpoint type="java-exception">
           <properties class="java.lang.IllegalAccessException" package="java.lang" />
           <option name="timeStamp" value="35" />
         </breakpoint>
-        <breakpoint enabled="true" type="java-exception">
+        <breakpoint type="java-exception">
           <properties class="java.lang.SecurityException" package="java.lang" />
           <option name="timeStamp" value="37" />
+        </breakpoint>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.ClassCastException" package="java.lang" />
+          <option name="timeStamp" value="39" />
         </breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/learn/Stu.java</url>
           <line>42</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/cn/cast/jvm/thread/AtomicFieldDemo.java</url>
           <line>8</line>
           <option name="timeStamp" value="34" />

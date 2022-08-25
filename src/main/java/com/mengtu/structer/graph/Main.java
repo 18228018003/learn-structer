@@ -65,7 +65,9 @@ public class Main {
 //        graph.print();
 //        graph.bfs("V1");
 //        graph.dfs("V1");
-        Map<String, Integer> map = graph.shortestPath("A");
-        System.out.println(map);
+        //Map<String, Integer> map = graph.shortestPath("A");
+        Map<String, Graph.PathInfo<String, Integer>> path = graph.shortestPath("A");
+        System.out.println(path);
+//        System.out.println(map);
     }
 }

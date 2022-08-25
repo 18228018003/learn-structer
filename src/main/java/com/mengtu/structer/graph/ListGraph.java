@@ -9,7 +9,7 @@ public class ListGraph<V,E> extends Graph<V, E> {
     private Comparator<Edge<V,E>> edgeComparator = (e1,e2)-> 0;
 
     public ListGraph() {}
-    public ListGraph(WeightManager<E> weightManager) {
+    public  ListGraph(WeightManager<E> weightManager) {
         super(weightManager);
     }
 
@@ -188,88 +188,122 @@ public class ListGraph<V,E> extends Graph<V, E> {
     }
 
     @Override
-    public Map<V, E> shortestPath(V begin) {
-        /*Vertex<V, E> beginVertex = vertexMap.get(begin);
+    public Map<V, PathInfo<V, E>> shortestPath(V begin) {
+
+        return dijkstra(begin);
+    }
+
+    @Override
+    public List<Object> allPath(V begin, V end) {
+        Vertex<V, E> beginVertex = vertexMap.get(begin);
+        Vertex<V, E> endVertex = vertexMap.get(end);
+        if (beginVertex == null || endVertex == null) return null;
+        List<Object> allPathList = new ArrayList<>();
+        Set<Vertex<V,E>> set = new HashSet<>();
+        Stack<Vertex<V,E>> stack = new Stack<>();
+        stack.push(beginVertex);
+        set.add(beginVertex);
+        List<String> pathList;
+        while (!stack.isEmpty()){
+            pathList = new ArrayList<>();
+            Vertex<V, E> vertex = stack.pop();
+            for (Edge<V, E> edge : vertex.outEdges) {
+
+            }
+        }
+
+        return null;
+    }
+
+
+
+    private Map<V,PathInfo<V,E>> bellmanFold(V begin){
+        Vertex<V, E> beginVertex = vertexMap.get(begin);
         if (beginVertex == null) return null;
 
-        Map<Vertex<V,E>, E> paths = new HashMap<>();
+        Map<V, PathInfo<V,E>> selectedPaths = new HashMap<>();
+        int count = verticesSize() - 1;
+        for (int i = 0; i < count; i++) {
+            for (Edge<V, E> edge : edges) {
+                PathInfo<V,E> fromPath = selectedPaths.get(edge.to.value);
+                relaxBellmanFold(selectedPaths,fromPath,edge);
+            }
+        }
+        return selectedPaths;
+    }
+    private Map<V, PathInfo<V, E>> dijkstra(V begin) {
+        Vertex<V, E> beginVertex = vertexMap.get(begin);
+        if (beginVertex == null) return null;
 
-        Map<V, E> selectedPaths = new HashMap<>();
+        Map<Vertex<V,E>, PathInfo<V,E>> paths = new HashMap<>();
+
+        Map<V, PathInfo<V,E>> selectedPaths = new HashMap<>();
 
         //初始化paths
         for (Edge<V, E> outEdge : beginVertex.outEdges) {
-            paths.put(outEdge.to, outEdge.weight);
+            PathInfo<V, E> pathInfo = new PathInfo<>();
+            pathInfo.weight = outEdge.weight;
+            pathInfo.edgeInfos.add(outEdge.info());
+            paths.put(outEdge.to, pathInfo);
         }
 
         while (!paths.isEmpty()){
-            Map.Entry<Vertex<V, E>, E> minPathEntry = getMinPath(paths);
+            Map.Entry<Vertex<V, E>, PathInfo<V,E>> minPathEntry = getMinPath(paths);
             Vertex<V, E> minVertex = minPathEntry.getKey();
             selectedPaths.put(minVertex.value, minPathEntry.getValue());
             paths.remove(minVertex);
             //对它的minVertex的outEdges进行松弛
             for (Edge<V, E> edge : minVertex.outEdges) {
                 //如果edge.to已经离开桌面，就没必要进行松弛操作
-                if (selectedPaths.containsKey(edge.to.value)) continue;
-
-                //新的可选择的最短路径 beginVertex 到 edge.from的最短路径 + edge.weight
-                E newWeight = weightManager.add(minPathEntry.getValue(), edge.weight);
-                E oldWeight = paths.get(edge.to);
-                if (oldWeight == null || weightManager.compare(newWeight,oldWeight) < 0) {
-                    paths.put(edge.to,newWeight);
-                }
-            }
-
-        }
-
-        return selectedPaths;*/
-
-        Vertex<V, E> beginVertex = vertexMap.get(begin);
-        if (beginVertex == null) return null;
-        Map<V,E> selectedPaths = new HashMap<>();
-        Map<Vertex<V,E>,E> paths = new HashMap<>();
-        for (Edge<V, E> edge : beginVertex.outEdges) {
-            paths.put(edge.to, edge.weight);
-        }
-        while (!paths.isEmpty()){
-            Map.Entry<Vertex<V, E>, E> minEntry = getMinPath2(paths);
-            Vertex<V, E> minVertex = minEntry.getKey();
-            selectedPaths.put(minVertex.value, minEntry.getValue());
-            paths.remove(minVertex);
-            for (Edge<V, E> edge : minVertex.outEdges) {
-                if (selectedPaths.containsKey(edge.to.value)) continue;
-                E newWeight = weightManager.add(minEntry.getValue(), edge.weight);
-                E oldWeight = paths.get(edge.to);
-                if (oldWeight == null || weightManager.compare(newWeight,oldWeight) < 0) {
-                    paths.put(edge.to,newWeight);
-                }
+                if (selectedPaths.containsKey(edge.to.value) || edge.to.equals(beginVertex)) continue;
+                relax(paths, minPathEntry.getValue(), edge);
             }
         }
 
         return selectedPaths;
     }
 
-    private Map.Entry<Vertex<V, E>, E> getMinPath2(Map<Vertex<V,E>,E> paths) {
-        Iterator<Map.Entry<Vertex<V, E>, E>> it = paths.entrySet().iterator();
-        Map.Entry<Vertex<V, E>, E> minEntry = it.next();
-        while (it.hasNext()){
-            Map.Entry<Vertex<V, E>, E> entry = it.next();
-            if (weightManager.compare(minEntry.getValue(), entry.getValue()) < 0) {
-                minEntry = entry;
-            }
-        }
-        return minEntry;
+
+
+    private void relax(Map<Vertex<V, E>, PathInfo<V, E>> paths, PathInfo<V, E> pathInfo, Edge<V, E> edge) {
+        //新的可选择的最短路径 beginVertex 到 edge.from的最短路径 + edge.weight
+        E newWeight = weightManager.add(pathInfo.weight, edge.weight);
+        PathInfo<V,E> oldPath = paths.get(edge.to);
+        if (oldPath != null &&  weightManager.compare(newWeight, oldPath.weight) >= 0) return;
+
+        if (oldPath == null){
+            oldPath = new PathInfo<>();
+        }else
+            oldPath.edgeInfos.clear();
+
+        oldPath.weight = newWeight;
+        oldPath.edgeInfos.addAll(pathInfo.edgeInfos);
+        oldPath.edgeInfos.add(edge.info());
+        paths.put(edge.to,oldPath);
+    }
+    private void relaxBellmanFold(Map<V, PathInfo<V, E>> paths, PathInfo<V, E> pathInfo, Edge<V, E> edge) {
+        //新的可选择的最短路径 beginVertex 到 edge.from的最短路径 + edge.weight
+        E newWeight = weightManager.add(pathInfo.weight, edge.weight);
+        PathInfo<V,E> oldPath = paths.get(edge.to.value);
+        if (oldPath != null &&  weightManager.compare(newWeight, oldPath.weight) >= 0) return;
+
+        if (oldPath == null){
+            oldPath = new PathInfo<>();
+        }else
+            oldPath.edgeInfos.clear();
+
+        oldPath.weight = newWeight;
+        oldPath.edgeInfos.addAll(pathInfo.edgeInfos);
+        oldPath.edgeInfos.add(edge.info());
+        paths.put(edge.to.value,oldPath);
     }
 
-
-    private void relax() {
-    }
-
-    private Map.Entry<Vertex<V, E>, E> getMinPath(Map<Vertex<V,E>,E> paths) {
-        Iterator<Map.Entry<Vertex<V, E>, E>> it = paths.entrySet().iterator();
-        Map.Entry<Vertex<V, E>, E> minEntry = it.next();
+    private Map.Entry<Vertex<V, E>, PathInfo<V,E>> getMinPath(Map<Vertex<V,E>,PathInfo<V,E>> paths) {
+        Iterator<Map.Entry<Vertex<V, E>, PathInfo<V,E>>> it = paths.entrySet().iterator();
+        Map.Entry<Vertex<V, E>, PathInfo<V,E>> minEntry = it.next();
         while (it.hasNext()){
-            Map.Entry<Vertex<V, E>, E> entry = it.next();
-            if (weightManager.compare(entry.getValue(),minEntry.getValue()) < 0){
+            Map.Entry<Vertex<V, E>, PathInfo<V,E>> entry = it.next();
+            if (weightManager.compare(entry.getValue().weight,minEntry.getValue().weight) < 0){
                 minEntry = entry;
             }
         }

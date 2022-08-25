@@ -33,7 +33,9 @@ public abstract class Graph<V, E> {
     public abstract List<V> topologicalSort();
 
     //	public abstract Map<V, E> shortestPath(V begin);
-    public abstract Map<V, E> shortestPath(V begin);
+    public abstract Map<V, PathInfo<V, E>> shortestPath(V begin);
+
+    public abstract List<Object> allPath(V begin,V end);
 
     public abstract Map<V, Map<V, PathInfo<V, E>>> shortestPath();
 
@@ -101,7 +103,7 @@ public abstract class Graph<V, E> {
         }
         @Override
         public String toString() {
-            return "EdgeInfo [from=" + from + ", to=" + to + ", weight=" + weight + "]";
+            return "" + from + " -> " + to + ", weight=" + weight + "]";
         }
     }
 }

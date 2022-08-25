@@ -61,17 +61,6 @@ public class BinaryHeap<E> extends AbstractHeap<E>{
     }
 
     private void siftUp(int index){
-//        E element = elements[index];
-//        while (index > 0){
-//            int pIndex = (index >> 1) - 1;
-//            E parent = elements[pIndex];
-//            if (compare(element,parent) <= 0) return;
-//            //交换
-//            E temp = elements[index];
-//            elements[index] = elements[pIndex];
-//            elements[pIndex] = temp;
-//            index = pIndex;
-//        }
         E e = elements[index];
         while (index > 0){
             int pIndex = (index - 1) >> 1;

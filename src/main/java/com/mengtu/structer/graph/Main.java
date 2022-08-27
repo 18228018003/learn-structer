@@ -1,6 +1,6 @@
 package com.mengtu.structer.graph;
 
-import java.util.Map;
+import java.util.List;
 
 public class Main {
     static Graph.WeightManager<Integer> weightManager = new Graph.WeightManager<Integer>() {
@@ -19,11 +19,7 @@ public class Main {
             return null;
         }
     };
-    public static void main(String[] args) {
-//        test1();
-//        test2();
-        test3();
-    }
+
 
 
     private static void test2() {
@@ -66,8 +62,43 @@ public class Main {
 //        graph.bfs("V1");
 //        graph.dfs("V1");
         //Map<String, Integer> map = graph.shortestPath("A");
-        Map<String, Graph.PathInfo<String, Integer>> path = graph.shortestPath("A");
-        System.out.println(path);
+        List<Object> list = graph.allPath("A", "B");
+        System.out.println(list);
 //        System.out.println(map);
+    }
+
+    private static void test4() {
+        ListGraph<String,Integer> graph = new ListGraph<>(weightManager);
+        graph.addEdge("V1","V2",10);
+        graph.addEdge("V1","V3",10);
+        graph.addEdge("V2","V7",10);
+        graph.addEdge("V2","V8",10);
+        graph.addEdge("V3","V8",10);
+        graph.addEdge("V3","V5",10);
+        graph.addEdge("V4","V9",10);
+        graph.addEdge("V5","V10",10);
+        graph.addEdge("V6","V9",10);
+        graph.addEdge("V7","V6",10);
+        graph.addEdge("V7","V8",10);
+        graph.addEdge("V8","V5",10);
+        graph.addEdge("V8","V4",10);
+        graph.addEdge("V8","V9",10);
+        graph.addEdge("V10","V4",10);
+
+        List<Object> list = graph.allPath("V1", "V9");
+        for (Object o : list) {
+            List<String> paths = (List<String>) o;
+            for (String node : paths) {
+                if (node.contains("from=")) continue;
+                System.out.print(node+" --> ");
+            }
+            System.out.println();
+        }
+        System.out.println(list.size());
+    }
+    public static void main(String[] args) {
+//        test1();
+//        test2();
+        test4();
     }
 }

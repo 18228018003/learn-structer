@@ -198,21 +198,37 @@ public class ListGraph<V,E> extends Graph<V, E> {
         Vertex<V, E> beginVertex = vertexMap.get(begin);
         Vertex<V, E> endVertex = vertexMap.get(end);
         if (beginVertex == null || endVertex == null) return null;
-        List<Object> allPathList = new ArrayList<>();
-        Set<Vertex<V,E>> set = new HashSet<>();
+        LinkedList<Object> allPathList = new LinkedList<>();
+        Set<Edge<V,E>> set = new HashSet<>();
         Stack<Vertex<V,E>> stack = new Stack<>();
         stack.push(beginVertex);
-        set.add(beginVertex);
-        List<String> pathList;
+        LinkedList<String> pathList = new LinkedList<>();
+        pathList.add(beginVertex.value.toString());
         while (!stack.isEmpty()){
-            pathList = new ArrayList<>();
+
             Vertex<V, E> vertex = stack.pop();
             for (Edge<V, E> edge : vertex.outEdges) {
-
+                if (set.contains(edge)) {
+                    pathList.remove(edge.to.value.toString());
+                    pathList.remove(edge.toString());
+                    set.remove(edge);
+                    continue;
+                }
+                stack.push(vertex);
+                stack.push(edge.to);
+                pathList.add(edge.toString());
+                pathList.add(edge.to.value.toString());
+                set.add(edge);
+                if (edge.to.equals(endVertex)){
+                    allPathList.add(pathList);
+                    pathList = new LinkedList<>(pathList);
+                    stack.pop();
+                }
+                break;
             }
         }
 
-        return null;
+        return allPathList;
     }
 
 

@@ -5,27 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e459b297-a451-4c29-96f1-0714f19e6938" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/recur/ClimbStairs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/recur/Fib.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/recur/Hanoi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/recur/NQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/sort/BubbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/sort/HeapSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/sort/InsertionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/sort/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/sort/MergeSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/sort/SelectionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/sort/Sort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/divide/CoinChange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/divide/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/dp/CoinChange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/dp/LCS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/dp/LIS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/dp/MaxSubArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/greedy/CoinChange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/greedy/Pirate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cast/pattern/offon/AbstractSkin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cast/pattern/offon/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cast/pattern/offon/DefaultSkin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cast/pattern/offon/HeiMaSkin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cast/pattern/offon/SougouInput.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mengtu/structer/graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/structer/graph/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mengtu/structer/graph/ListGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/structer/graph/ListGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mengtu/structer/graph/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/structer/graph/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mengtu/structer/heap/BinaryHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/structer/heap/BinaryHeap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/recur/NQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/alogrithm/recur/NQueue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,13 +115,13 @@
       <recent name="cn.cast.recur" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.cast.sort.Main" />
+  <component name="RunManager" selected="Application.LCS">
+    <configuration name="CoinChange (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mengtu.alogrithm.divide.CoinChange" />
       <module name="learn-structer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.cast.sort.*" />
+          <option name="PATTERN" value="com.mengtu.alogrithm.divide.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,12 +129,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mengtu.alogrithm.sort.Main" />
+    <configuration name="CoinChange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mengtu.alogrithm.dp.CoinChange" />
       <module name="learn-structer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mengtu.alogrithm.sort.*" />
+          <option name="PATTERN" value="com.mengtu.alogrithm.dp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,12 +142,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mengtu.alogrithm.sort.MergeSort" />
+    <configuration name="LCS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mengtu.alogrithm.dp.LCS" />
       <module name="learn-structer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mengtu.alogrithm.sort.*" />
+          <option name="PATTERN" value="com.mengtu.alogrithm.dp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -166,12 +155,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mengtu.alogrithm.recur.NQueue" />
+    <configuration name="LIS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mengtu.alogrithm.dp.LIS" />
       <module name="learn-structer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mengtu.alogrithm.recur.*" />
+          <option name="PATTERN" value="com.mengtu.alogrithm.dp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -179,12 +168,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Nq" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mengtu.alogrithm.recur.Nq" />
+    <configuration name="MaxSubArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mengtu.alogrithm.dp.MaxSubArray" />
       <module name="learn-structer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mengtu.alogrithm.recur.*" />
+          <option name="PATTERN" value="com.mengtu.alogrithm.dp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -193,19 +182,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.NQueue" />
-      <item itemvalue="Application.Nq" />
-      <item itemvalue="Application.MergeSort" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.CoinChange (1)" />
+      <item itemvalue="Application.CoinChange" />
+      <item itemvalue="Application.MaxSubArray" />
+      <item itemvalue="Application.LIS" />
+      <item itemvalue="Application.LCS" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.MergeSort" />
-        <item itemvalue="Application.Nq" />
-        <item itemvalue="Application.NQueue" />
+        <item itemvalue="Application.LCS" />
+        <item itemvalue="Application.LIS" />
+        <item itemvalue="Application.MaxSubArray" />
+        <item itemvalue="Application.CoinChange" />
+        <item itemvalue="Application.CoinChange (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +253,9 @@
       <workItem from="1661172156743" duration="8549000" />
       <workItem from="1661222819445" duration="13620000" />
       <workItem from="1661326980204" duration="595000" />
-      <workItem from="1661424760804" duration="9077000" />
+      <workItem from="1661424760804" duration="17209000" />
+      <workItem from="1661520055767" duration="23000" />
+      <workItem from="1661520084793" duration="13220000" />
     </task>
     <task id="LOCAL-00001" summary="测试 计算单词数量">
       <created>1661068219721</created>
@@ -294,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661099922877</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="相关算法">
+      <created>1661438460135</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661438460135</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,7 +303,8 @@
     <MESSAGE value="提交 .idea文件" />
     <MESSAGE value="图相关数据结构 提交" />
     <MESSAGE value="删除无关东西" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除无关东西" />
+    <MESSAGE value="相关算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="相关算法" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

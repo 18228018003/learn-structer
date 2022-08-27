@@ -34,7 +34,7 @@ public class NQueue {
         //
         if (row == cols.length){
             ways++;
-            show();
+            //show();
             return;
         }
 
@@ -77,7 +77,7 @@ public class NQueue {
     public static void main(String[] args) {
         NQueue queue = new NQueue();
         queue.placeQueue(4);
-//        queue.placeQueue(6);
-//        queue.placeQueue(8);
+        queue.placeQueue(6);
+        queue.placeQueue(8);
     }
 }

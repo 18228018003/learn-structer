@@ -233,6 +233,7 @@ public class ListGraph<V,E> extends Graph<V, E> {
 
 
 
+
     private Map<V,PathInfo<V,E>> bellmanFold(V begin){
         Vertex<V, E> beginVertex = vertexMap.get(begin);
         if (beginVertex == null) return null;
@@ -377,6 +378,21 @@ public class ListGraph<V,E> extends Graph<V, E> {
             dfs(edge.to,set);
         }
     }
+  /*  public List<Object> allPaths(V begin,V end){
+        Vertex<V, E> beginVertex = vertexMap.get(begin);
+        Vertex<V, E> endVertex = vertexMap.get(end);
+        if (beginVertex == null || endVertex == null) return null;
+        HashSet<Vertex<V, E>> set = new HashSet<>();
+        StringBuilder sb = new StringBuilder(begin.toString());
+        set.add(beginVertex);
+        return allPaths(beginVertex,endVertex,set,sb);
+    }
+
+    private List<Object> allPaths(Vertex<V, E> beginVertex, Vertex<V, E> endVertex, HashSet<Vertex<V, E>> set,StringBuilder sb) {
+        if (beginVertex.equals(endVertex)) return null;
+
+        return null;
+    }*/
 
     class Vertex<V,E>{
         public Vertex(V value){

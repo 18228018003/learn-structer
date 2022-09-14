@@ -10,8 +10,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class TestWalkFileTree {
     @Test
     public void testWalkFileTree() throws IOException {
-        AtomicInteger dirCount = new AtomicInteger();
-        AtomicInteger fileCount = new AtomicInteger();
+        final AtomicInteger dirCount = new AtomicInteger();
+        final AtomicInteger fileCount = new AtomicInteger();
         Files.walkFileTree(Paths.get("C:\\develop\\Go"),new SimpleFileVisitor<Path>(){
             @Override
             public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
@@ -32,7 +32,7 @@ public class TestWalkFileTree {
     }
     @Test
     public void testWalkFileTree1() throws IOException {
-        AtomicInteger fileCount = new AtomicInteger();
+        final AtomicInteger fileCount = new AtomicInteger();
         Files.walkFileTree(Paths.get("C:\\develop\\Go"),new SimpleFileVisitor<Path>(){
             @Override
             public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {

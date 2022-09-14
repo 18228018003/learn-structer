@@ -43,7 +43,7 @@ public class Server {
             //3.selector的select方法
             selector.select();//没有事件发生，阻塞
             //4.处理时间
-            //内部包含了所有发生了的时间 主要是为了遍历的时候删除 才使用迭代器
+            //内部包含了所有发生了的事件 主要是为了遍历的时候删除 才使用迭代器
             Iterator<SelectionKey> iterator = selector.selectedKeys().iterator();
             while (iterator.hasNext()){
                 SelectionKey key = iterator.next();

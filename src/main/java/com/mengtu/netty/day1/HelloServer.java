@@ -19,10 +19,11 @@ public class HelloServer {
         NioEventLoopGroup worker = new NioEventLoopGroup();
         ServerBootstrap serverBootstrap = new ServerBootstrap();
         serverBootstrap.option(ChannelOption.SO_RCVBUF,10);
+        //3.选择服务器的ServerSocketChannel实现
         serverBootstrap.channel(NioServerSocketChannel.class);
                 //2.
         serverBootstrap.group(boss,worker);
-                //3.选择服务器的ServerSocketChannel实现
+
 
                 //4.boss负责处理连接 worker负责处理读写 决定了worker能执行那些操作
         serverBootstrap.childHandler(

@@ -13,17 +13,17 @@ import java.nio.charset.StandardCharsets;
 @Slf4j
 public class EchoServer {
     public static void main(String[] args) {
-        new ServerBootstrap()
+        ChannelFuture channelFuture = new ServerBootstrap()
                 .group(new NioEventLoopGroup())
                 .channel(NioServerSocketChannel.class)
                 .childHandler(new ChannelInitializer<NioSocketChannel>() {
                     @Override
                     protected void initChannel(NioSocketChannel ch) throws Exception {
-                        ch.pipeline().addLast(new ChannelInboundHandlerAdapter(){
+                        ch.pipeline().addLast(new ChannelInboundHandlerAdapter() {
                             @Override
                             public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
                                 ByteBuf buf = (ByteBuf) msg;
-                                log.debug("{}",buf.toString(StandardCharsets.UTF_8));
+                                log.debug("{}", buf.toString(StandardCharsets.UTF_8));
                                 ByteBuf response = ctx.alloc().buffer();
                                 response.writeBytes(buf);
                                 ctx.writeAndFlush(response);
@@ -31,6 +31,12 @@ public class EchoServer {
                         });
                     }
                 }).bind(9000);
-
+        channelFuture.addListener(new ChannelFutureListener() {
+            @Override
+            public void operationComplete(ChannelFuture future) throws Exception {
+                Channel channel = future.channel();
+                log.debug("{}", channel);
+            }
+        });
     }
 }

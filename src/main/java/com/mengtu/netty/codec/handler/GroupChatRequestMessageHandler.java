@@ -1,8 +1,8 @@
 package com.mengtu.netty.codec.handler;
 
-import cn.itcast.message.GroupChatRequestMessage;
-import cn.itcast.message.GroupChatResponseMessage;
-import cn.itcast.server.session.GroupSessionFactory;
+import com.mengtu.netty.codec.message.GroupChatRequestMessage;
+import com.mengtu.netty.codec.message.GroupChatResponseMessage;
+import com.mengtu.netty.codec.server.session.GroupSessionFactory;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;

@@ -1,4 +1,4 @@
-package com.learn;
+package com.learn.no;
 
 import cn.cast.list.ArrayList;
 import cn.cast.list.List;

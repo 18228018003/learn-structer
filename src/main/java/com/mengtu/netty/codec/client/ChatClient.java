@@ -2,11 +2,15 @@ package com.mengtu.netty.codec.client;
 
 import com.mengtu.netty.codec.message.*;
 import com.mengtu.netty.codec.protocol.MessageCodec;
+import com.mengtu.netty.codec.protocol.ProtocolFrameDecoder;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
+import io.netty.handler.timeout.IdleState;
+import io.netty.handler.timeout.IdleStateEvent;
+import io.netty.handler.timeout.IdleStateHandler;
 import lombok.extern.slf4j.Slf4j;
 
 import java.net.InetSocketAddress;
@@ -29,9 +33,26 @@ public class ChatClient {
         bootstrap.handler(new ChannelInitializer<SocketChannel>() {
             @Override
             protected void initChannel(SocketChannel ch) throws Exception {
-//                ch.pipeline().addLast(new ProtocolFrameDecoder());
+
+                ch.pipeline().addLast(new ProtocolFrameDecoder());
 //                ch.pipeline().addLast(new LoggingHandler(LogLevel.ERROR));
                 ch.pipeline().addLast(new MessageCodec());
+                //5s内如果没有向服务器写出数据, 会触发一个事件IdleState.WRITE_IDLE事件
+                ch.pipeline().addLast(new IdleStateHandler(0,5,0));
+                //new ChannelDuplexHandler() 即可以作为入站处理器也可以作为出站处理器
+                ch.pipeline().addLast(new ChannelDuplexHandler(){
+                    //用来触发特殊事件
+                    @Override
+                    public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
+                        IdleStateEvent event = (IdleStateEvent) evt;
+                        //触发了读空闲事件
+                        if (event.state() == IdleState.WRITER_IDLE){
+                            log.debug("已经3秒没有写数据了 自动发送一个心跳包");
+                            ctx.writeAndFlush(new PingMessage());
+                        }
+                        super.userEventTriggered(ctx, evt);
+                    }
+                });
                 ch.pipeline().addLast("client handler",new ChannelInboundHandlerAdapter(){
                     @Override
                     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
@@ -116,6 +137,18 @@ public class ChatClient {
                                 }
                             }
                         },"system in").start();
+                    }
+
+                    //连接断开时触发
+                    @Override
+                    public void channelInactive(ChannelHandlerContext ctx) throws Exception {
+                        super.channelInactive(ctx);
+                    }
+
+                    //出现异常时触发
+                    @Override
+                    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
+                        super.exceptionCaught(ctx, cause);
                     }
                 });
             }

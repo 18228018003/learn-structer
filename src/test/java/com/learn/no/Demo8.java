@@ -1,4 +1,4 @@
-package com.learn;
+package com.learn.no;
 
 public class Demo8 {
     final static Object room = new Object();

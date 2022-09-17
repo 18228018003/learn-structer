@@ -1,4 +1,4 @@
-package com.learn;
+package com.learn.no;
 
 import org.junit.Test;
 

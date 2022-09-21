@@ -15,13 +15,16 @@ public class RpcRequestMessageHandler extends SimpleChannelInboundHandler<RpcReq
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, RpcRequestMessage message) throws Exception {
         RpcResponseMessage response = new RpcResponseMessage();
+        response.setSequenceId(message.getSequenceId());
         try {
             HelloService service = (HelloService) ServiceFactory.getService(Class.forName(message.getInterfaceName()));
             Method method = service.getClass().getMethod(message.getMethodName(),message.getParameterTypes());
             Object invoke = method.invoke(service, message.getParameterValue());
             response.setReturnValue(invoke);
         }catch (Exception e){
-            response.setExceptionValue(e);
+            e.printStackTrace();
+            String msg = e.getCause().getMessage();
+            response.setExceptionValue(new Exception("远程调用出错" + msg));
         }
         ctx.writeAndFlush(response);
     }

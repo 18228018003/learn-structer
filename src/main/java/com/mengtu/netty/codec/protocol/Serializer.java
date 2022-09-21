@@ -1,8 +1,9 @@
 package com.mengtu.netty.codec.protocol;
 
-import com.google.gson.Gson;
+import com.google.gson.*;
 
 import java.io.*;
+import java.lang.reflect.Type;
 import java.nio.charset.StandardCharsets;
 
 public interface Serializer {
@@ -44,14 +45,34 @@ public interface Serializer {
             @Override
             public <T> T deserializer(Class<T> clazz, byte[] bytes) {
                 String json = new String(bytes, StandardCharsets.UTF_8);
-                return new Gson().fromJson(json,clazz);
+                Gson gson = new GsonBuilder().registerTypeAdapter(Class.class, new ClassCode()).create();
+                return gson.fromJson(json,clazz);
             }
 
             @Override
             public <T> byte[] serializer(T object){
-                String json = new Gson().toJson(object);
+                Gson gson = new GsonBuilder().registerTypeAdapter(Class.class, new ClassCode()).create();
+                String json = gson.toJson(object);
                 return json.getBytes(StandardCharsets.UTF_8);
             }
+        }
+    }
+    class ClassCode implements JsonSerializer<Class<?>>, JsonDeserializer<Class<?>> {
+
+        @Override
+        public Class<?> deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
+            String str = json.getAsString();
+            try {
+                return Class.forName(str);
+            } catch (ClassNotFoundException e) {
+                throw new JsonParseException(e);
+            }
+        }
+
+        @Override
+        public JsonElement serialize(Class<?> src, Type typeOfSrc, JsonSerializationContext context) {
+
+            return new JsonPrimitive(src.getName());
         }
     }
 }

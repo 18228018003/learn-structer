@@ -5,42 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e459b297-a451-4c29-96f1-0714f19e6938" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/message/PingMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/message/PongMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/protocol/Serializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/client/RpcClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/handler/RpcRequestMessageHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/handler/RpcResponseMessageHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/message/RpcRequestMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/message/RpcResponseMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/server/RpcServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/server/ServiceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/service/HelloService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/service/HelloServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/test/TestBacklogClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/test/TestBacklogServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/test/TestByteBuf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/test/TestConnectionTimeout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/learn/netty/TestSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/SourceCodeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/protocol/MessageCodecSharable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/protocol/SequenceIdGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/client/RpcClientManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/test/TestGson.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/client/ChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/client/ChatClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/handler/ChatRequestMessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/handler/ChatRequestMessageHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/handler/GroupChatRequestMessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/handler/GroupChatRequestMessageHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/handler/GroupCreateRequestMessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/handler/GroupCreateRequestMessageHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/handler/GroupMembersRequestMessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/handler/GroupMembersRequestMessageHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/handler/GroupQuitRequestMessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/handler/GroupQuitRequestMessageHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/handler/LoginRequestMessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/handler/LoginRequestMessageHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/message/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/message/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/protocol/MessageCodec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/protocol/MessageCodec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/server/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/server/ChatServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/learn/Demo8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/learn/no/Demo8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/learn/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/learn/no/Job.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/learn/Mina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/learn/no/Mina.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/learn/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/learn/no/MyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/learn/Stu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/learn/no/Stu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/learn/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/learn/no/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/protocol/Serializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/protocol/Serializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/client/RpcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/client/RpcClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/handler/RpcRequestMessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/handler/RpcRequestMessageHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/handler/RpcResponseMessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/handler/RpcResponseMessageHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/server/RpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/server/RpcServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/service/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/service/HelloServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +81,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/handler" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/message" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/mengtu/netty/codec/protocol" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -127,11 +103,11 @@
       <recent name="com.learn" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\develop\learn-structer\src\main\java\com\mengtu\netty\codec\protocol" />
       <recent name="D:\develop\learn-structer\src\main\java\com\mengtu\netty\rpc\message" />
       <recent name="D:\develop\learn-structer\src\main\java\com\mengtu\netty\codec\handler" />
       <recent name="D:\develop\learn-structer\src\main\java\com\mengtu\netty\codec\server\session" />
       <recent name="D:\develop\learn-structer\src\main\java\com\mengtu\netty\codec\server\service" />
-      <recent name="D:\develop\learn-structer\src\main\java\com\mengtu\netty\codec\message" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\develop\learn-structer\src\main\java\com\mengtu\netty\codec\message" />
@@ -141,14 +117,14 @@
       <recent name="com.mengtu.netty.codec.handler" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mengtu.netty.rpc.client" />
       <recent name="com.mengtu.netty.test" />
       <recent name="com.mengtu.net.nio.selector" />
       <recent name="com.mengtu.net.nio.demo2" />
       <recent name="com.mengtu.net.bio.four" />
-      <recent name="com.mengtu.net.bio" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RpcClient">
+  <component name="RunManager" selected="Application.SourceCodeTest">
     <configuration name="Client" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mengtu.net.bio.one.Client" />
       <module name="learn-structer" />
@@ -188,12 +164,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RpcRequestMessageHandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mengtu.netty.rpc.handler.RpcRequestMessageHandler" />
+    <configuration name="RpcClientManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mengtu.netty.rpc.client.RpcClientManager" />
       <module name="learn-structer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mengtu.netty.rpc.handler.*" />
+          <option name="PATTERN" value="com.mengtu.netty.rpc.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -214,12 +190,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestBacklogClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mengtu.netty.test.TestBacklogClient" />
+    <configuration name="SourceCodeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mengtu.netty.SourceCodeTest" />
       <module name="learn-structer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mengtu.netty.test.*" />
+          <option name="PATTERN" value="com.mengtu.netty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -227,12 +203,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestByteBuf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mengtu.netty.test.TestByteBuf" />
+    <configuration name="TestGson" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mengtu.netty.rpc.test.TestGson" />
       <module name="learn-structer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mengtu.netty.test.*" />
+          <option name="PATTERN" value="com.mengtu.netty.rpc.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -243,19 +219,19 @@
     <list>
       <item itemvalue="Application.Client" />
       <item itemvalue="Application.MulitThreadClient" />
-      <item itemvalue="Application.TestBacklogClient" />
-      <item itemvalue="Application.TestByteBuf" />
-      <item itemvalue="Application.RpcRequestMessageHandler" />
       <item itemvalue="Application.RpcServer" />
       <item itemvalue="Application.RpcClient" />
+      <item itemvalue="Application.TestGson" />
+      <item itemvalue="Application.RpcClientManager" />
+      <item itemvalue="Application.SourceCodeTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RpcClient" />
+        <item itemvalue="Application.SourceCodeTest" />
+        <item itemvalue="Application.RpcClientManager" />
         <item itemvalue="Application.RpcServer" />
-        <item itemvalue="Application.RpcRequestMessageHandler" />
-        <item itemvalue="Application.TestBacklogClient" />
-        <item itemvalue="Application.TestByteBuf" />
+        <item itemvalue="Application.RpcClient" />
+        <item itemvalue="Application.TestGson" />
       </list>
     </recent_temporary>
   </component>
@@ -327,7 +303,7 @@
       <workItem from="1662644951253" duration="53916000" />
       <workItem from="1662886357548" duration="65398000" />
       <workItem from="1663165000357" duration="2117000" />
-      <workItem from="1663235674259" duration="28493000" />
+      <workItem from="1663235674259" duration="45863000" />
     </task>
     <task id="LOCAL-00001" summary="测试 计算单词数量">
       <created>1661068219721</created>
@@ -406,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663261788275</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="netty实现一个简单的rpc demo">
+      <created>1663430907186</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1663430907187</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,7 +418,8 @@
     <MESSAGE value="刷了一些leetCode题，外加javaStream流操作" />
     <MESSAGE value="netty相关基础学习，NIO学习" />
     <MESSAGE value="netty聊天实现群聊业务，ChatServer还没完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="netty聊天实现群聊业务，ChatServer还没完成" />
+    <MESSAGE value="netty实现一个简单的rpc demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="netty实现一个简单的rpc demo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -467,6 +451,10 @@
         <breakpoint type="java-exception">
           <properties class="io.netty.handler.codec.DecoderException" package="io.netty.handler.codec" />
           <option name="timeStamp" value="66" />
+        </breakpoint>
+        <breakpoint type="java-exception">
+          <properties class="java.net.BindException" package="java.net" />
+          <option name="timeStamp" value="90" />
         </breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/learn/no/Stu.java</url>
@@ -523,25 +511,60 @@
           <line>260</line>
           <option name="timeStamp" value="74" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/server/ServiceFactory.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="80" />
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/client/RpcClientManager.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/client/RpcClient.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="82" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/mengtu/netty/SourceCodeTest.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="99" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/handler/RpcRequestMessageHandler.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="84" />
+          <url>jar://$PROJECT_DIR$/../../mavenrepository/io/netty/netty-transport/4.1.53.Final/netty-transport-4.1.53.Final-sources.jar!/io/netty/bootstrap/AbstractBootstrap.java</url>
+          <line>298</line>
+          <option name="timeStamp" value="100" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mengtu/netty/rpc/server/RpcServer.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="85" />
+          <url>jar://$PROJECT_DIR$/../../mavenrepository/io/netty/netty-transport/4.1.53.Final/netty-transport-4.1.53.Final-sources.jar!/io/netty/bootstrap/AbstractBootstrap.java</url>
+          <line>280</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../mavenrepository/io/netty/netty-transport/4.1.53.Final/netty-transport-4.1.53.Final-sources.jar!/io/netty/bootstrap/AbstractBootstrap.java</url>
+          <line>310</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../mavenrepository/io/netty/netty-transport/4.1.53.Final/netty-transport-4.1.53.Final-sources.jar!/io/netty/bootstrap/ServerBootstrap.java</url>
+          <line>147</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../mavenrepository/io/netty/netty-transport/4.1.53.Final/netty-transport-4.1.53.Final-sources.jar!/io/netty/channel/AbstractChannel.java</url>
+          <line>473</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../mavenrepository/io/netty/netty-transport/4.1.53.Final/netty-transport-4.1.53.Final-sources.jar!/io/netty/channel/AbstractChannel.java</url>
+          <line>501</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../mavenrepository/io/netty/netty-transport/4.1.53.Final/netty-transport-4.1.53.Final-sources.jar!/io/netty/channel/AbstractChannel.java</url>
+          <line>503</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../mavenrepository/io/netty/netty-transport/4.1.53.Final/netty-transport-4.1.53.Final-sources.jar!/io/netty/bootstrap/AbstractBootstrap.java</url>
+          <line>355</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../mavenrepository/io/netty/netty-transport/4.1.53.Final/netty-transport-4.1.53.Final-sources.jar!/io/netty/channel/AbstractChannel.java</url>
+          <line>560</line>
+          <option name="timeStamp" value="111" />
         </line-breakpoint>
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/mengtu/letcode/list/_16_partSort.java</url>

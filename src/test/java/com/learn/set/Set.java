@@ -19,5 +19,9 @@ public interface Set<E> {
         boolean stop;
         public abstract boolean visit(E element);
     }
+
+    public static void main(String[] args) {
+        System.out.println(65536 << 2);
+    }
 }
 
